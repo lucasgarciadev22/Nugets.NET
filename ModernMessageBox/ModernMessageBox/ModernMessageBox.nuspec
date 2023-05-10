@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>ModernMessageBox</id>
+    <version>1.0.0</version>
+    <authors>lucasgarciadev22</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    
+    <projectUrl>https://github.com/lucasgarciadev22/Nugets/tree/main/ModernMessageBox</projectUrl>
+    <description>A modern Windows message box UI template alternative for WPF projects </description>
+    <releaseNotes>Initial version commit...</releaseNotes>
+    <copyright>Copyright © 2023 Lucas Garcia</copyright>
+    <tags>wpf ui csharp c# message box template xaml modern windows</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="MahApps.Metro.IconPacks" version="4.11.0" />
+	<dependency id="MahApps.Metro.IconPacks.Material" version="4.11.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

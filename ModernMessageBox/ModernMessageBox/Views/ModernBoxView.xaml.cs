@@ -61,9 +61,9 @@ namespace ModernMessageBox
 
         void SetResultButtonsConfig(ButtonTypes buttonTypes, string auxiliary = null)
         {
-            PositiveButton.Visibility = Visibility.Hidden;
-            NegativeButton.Visibility = Visibility.Hidden;
-            AuxiliaryButton.Visibility = Visibility.Hidden;
+            PositiveButton.Visibility = Visibility.Collapsed;
+            NegativeButton.Visibility = Visibility.Collapsed;
+            AuxiliaryButton.Visibility = Visibility.Collapsed;
 
             string ok = "Ok";
             string cancel = "Cancel";
@@ -75,33 +75,27 @@ namespace ModernMessageBox
                 case ButtonTypes.Ok:
                     PositiveButton.Visibility = Visibility.Visible;
                     PositiveButton.Content = ok;
-                    PositiveButton.Margin = new Thickness(0, 0, 50, 0);
                     break;
 
                 case ButtonTypes.CancelOk:
                     PositiveButton.Visibility = Visibility.Visible;
                     PositiveButton.Content = ok;
-                    PositiveButton.Margin = new Thickness(0, 0, 150, 0);
 
                     NegativeButton.Visibility = Visibility.Visible;
                     NegativeButton.Content = cancel;
-                    NegativeButton.Margin = new Thickness(0, 0, 50, 0);
                     break;
 
                 case ButtonTypes.NoYes:
                     PositiveButton.Visibility = Visibility.Visible;
                     PositiveButton.Content = yes;
-                    PositiveButton.Margin = new Thickness(0, 0, 150, 0);
 
                     NegativeButton.Visibility = Visibility.Visible;
                     NegativeButton.Content = no;
-                    NegativeButton.Margin = new Thickness(0, 0, 50, 0);
                     break;
 
                 case ButtonTypes.OkAux:
                     PositiveButton.Visibility = Visibility.Visible;
                     PositiveButton.Content = ok;
-                    PositiveButton.Margin = new Thickness(0, 0, 150, 0);
 
                     AuxiliaryButton.Visibility = Visibility.Visible;
                     AuxiliaryButton.Content = auxiliary;
