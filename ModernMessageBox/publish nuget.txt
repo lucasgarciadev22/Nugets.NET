@@ -1,0 +1,5 @@
+cd \Nugets\ModernMessageBox\ModernMessageBox
+
+nuget pack -Prop Configuration=Release
+
+nuget push ModernMessageBox.<version>.nupkg <api key> -Source https://api.nuget.org/v3/index.json
