@@ -48,12 +48,12 @@
                            Foreground="{StaticResource FontColor}"
                            Text="Teste"/>
                 <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right">
-                    <Button Style="{StaticResource SecondaryButton}" x:Name="NegativeButton"  IsCancel="True"
-                        Click="OnNegativeButtonClick"
-                        Content="Cancel"/>
                     <Button Style="{StaticResource SuccessButton}" x:Name="PositiveButton" IsDefault="True"
                         Click="OnPositiveButtonClick"
                         Content="Ok"/>
+                    <Button Style="{StaticResource SecondaryButton}" x:Name="NegativeButton"  IsCancel="True"
+                        Click="OnNegativeButtonClick"
+                        Content="Cancel"/>
                     <Button Style="{StaticResource PrimaryButton}" x:Name="AuxiliaryButton" 
                         Click="OnAuxiliaryButtonClick"
                         Content="Teste"/>

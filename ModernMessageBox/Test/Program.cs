@@ -30,10 +30,10 @@ namespace Test
             }
 
             //README SAMPLE_INFO.PNG TEST
-            MessageResults result1 = ModernBox.Show("Info", "Test Content", ImageStyles.Info, ButtonTypes.CancelOk);
+            MessageResults result1 = ModernBox.Show("Info", "Test Content", ImageStyles.Info, ButtonTypes.OkCancel);
 
             //README SAMPLE_QUESTION.PNG TEST
-            MessageResults result2 = ModernBox.Show("Question", "Test Content", ImageStyles.Question, ButtonTypes.NoYesAux, "Test Aux");
+            MessageResults result2 = ModernBox.Show("Question", "Test Content", ImageStyles.Question, ButtonTypes.YesNoAux, "Test Aux");
 
             //OTHER TESTS
             ModernBox.Show("Title", "Test Content");
@@ -52,8 +52,8 @@ namespace Test
 
             //CUSTOM IMAGES AND SOUNDS TESTS
 
-            ModernBox.Show("Title", "Test Content", ImageStyles.Custom, ButtonTypes.NoYesAux, @"Images\leopard.png", "Test Aux");
-            ModernBox.Show("Title", "Test Content", ImageStyles.Custom, ButtonTypes.NoYesAux, @"Images\leopard.png", SystemSounds.Beep, "Test Aux");
+            ModernBox.Show("Title", "Test Content", ImageStyles.Custom, ButtonTypes.YesNoAux, @"Images\leopard.png", "Test Aux");
+            ModernBox.Show("Title", "Test Content", ImageStyles.Custom, ButtonTypes.YesNoAux, @"Images\leopard.png", SystemSounds.Beep, "Test Aux");
         }
     }
 }

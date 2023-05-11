@@ -77,7 +77,7 @@ namespace ModernMessageBox
                     PositiveButton.Content = ok;
                     break;
 
-                case ButtonTypes.CancelOk:
+                case ButtonTypes.OkCancel:
                     PositiveButton.Visibility = Visibility.Visible;
                     PositiveButton.Content = ok;
 
@@ -85,7 +85,7 @@ namespace ModernMessageBox
                     NegativeButton.Content = cancel;
                     break;
 
-                case ButtonTypes.NoYes:
+                case ButtonTypes.YesNo:
                     PositiveButton.Visibility = Visibility.Visible;
                     PositiveButton.Content = yes;
 
@@ -95,13 +95,13 @@ namespace ModernMessageBox
 
                 case ButtonTypes.OkAux:
                     PositiveButton.Visibility = Visibility.Visible;
-                    PositiveButton.Content = ok;
+                    PositiveButton.Content = ok; 
 
                     AuxiliaryButton.Visibility = Visibility.Visible;
                     AuxiliaryButton.Content = auxiliary;
                     break;
 
-                case ButtonTypes.CancelOkAux:
+                case ButtonTypes.OkCancelAux:
                     PositiveButton.Visibility = Visibility.Visible;
                     PositiveButton.Content = ok;
 
@@ -112,7 +112,7 @@ namespace ModernMessageBox
                     AuxiliaryButton.Content = auxiliary;
                     break;
 
-                case ButtonTypes.NoYesAux:
+                case ButtonTypes.YesNoAux:
                     PositiveButton.Visibility = Visibility.Visible;
                     PositiveButton.Content = yes;
 

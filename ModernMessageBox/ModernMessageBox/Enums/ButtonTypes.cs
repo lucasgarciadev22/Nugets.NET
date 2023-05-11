@@ -3,11 +3,11 @@
     public enum ButtonTypes
     {
         Ok,
-        CancelOk,
-        NoYes,
+        OkCancel,
+        YesNo,
         OkAux,
-        CancelOkAux,
-        NoYesAux,
+        OkCancelAux,
+        YesNoAux,
         SingleCustom,
         TwoCustom,
         ThreeCustom,
