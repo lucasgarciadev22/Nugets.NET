@@ -7,16 +7,18 @@
         mc:Ignorable="d"
    x:ClassModifier="internal"
         Height="Auto" Width="620" MaxHeight="800" SizeToContent="Height"
-        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False"
-        BorderThickness="1"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False"
+        WindowStyle="None"
+        BorderThickness="0"
+        BorderBrush="Transparent"
         FocusManager.FocusedElement="{Binding ElementName=PositiveButton}"
-        MouseDown="OnMouseDown" ContentRendered="OnContentRendered">
+        MouseDown="OnMouseDown" ContentRendered="OnContentRendered" Background="Transparent">
 
     <Window.Resources>
         <ResourceDictionary Source="../Styles/Styles.xaml"/>
     </Window.Resources>
-
-    <Grid x:Name="MessageBoxBase" Background="{StaticResource BackgroundColor}">
+    <Border x:Name="MessageBoxBase" CornerRadius="10" BorderBrush="DarkGray" BorderThickness="1.5" ClipToBounds="True"  Background="{StaticResource BackgroundColor}">
+    <Grid  Background="Transparent" ClipToBounds="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition/>
@@ -61,4 +63,5 @@
             </Grid>
         </Grid>
     </Grid>
+    </Border>
 </Window>
