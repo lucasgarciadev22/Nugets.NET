@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:converters="clr-namespace:System.Windows.Media;assembly=PresentationCore"
         mc:Ignorable="d"
-   x:ClassModifier="internal"
+        x:ClassModifier="internal"
         Height="Auto" Width="620" MaxHeight="800" SizeToContent="Height"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False"
         WindowStyle="None"
-        BorderThickness="0"
-        BorderBrush="Transparent"
+        BorderThickness="0" AllowsTransparency="True"
         FocusManager.FocusedElement="{Binding ElementName=PositiveButton}"
-        MouseDown="OnMouseDown" ContentRendered="OnContentRendered" Background="Transparent">
+        MouseDown="OnMouseDown" ContentRendered="OnContentRendered" 
+        Background="Transparent" BorderBrush="Transparent">
 
     <Window.Resources>
         <ResourceDictionary Source="../Styles/Styles.xaml"/>
