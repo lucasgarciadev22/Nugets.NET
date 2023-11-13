@@ -31,6 +31,6 @@
             
         </Grid>
 
-        <Toast:ToastAreaControl Grid.Row="1" x:Name="ToastArea" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="500"/>
+        <Toast:ToastAreaControl Grid.Row="1" x:Name="ToastArea" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="500"/>
     </Grid>
 </Window>

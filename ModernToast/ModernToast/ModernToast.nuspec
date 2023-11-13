@@ -4,12 +4,12 @@
     <id>ModernToast</id>
     <version>1.0.0</version>
     <title>ModernToast</title>
-    <authors>Lucas Garcia (@lucasgarciadev22)</authors>
+    <authors>lucasgarciadev22</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl></projectUrl>
     <description>Modern custom toast popups for WPF applications</description>
-    <copyright>Lucas Garcia</copyright>
-    <tags>Modern WPF toast popups</tags>
+    <copyright>Copyright © 2023 Lucas Garcia</copyright>
+    <tags>modern wpf toast popups</tags>
   </metadata>
 </package>
