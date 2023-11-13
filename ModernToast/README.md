@@ -1,37 +1,33 @@
-# EasyDotNetNotification
-A simple way to display alert notifications
+# ModernToast
+Modern custom toast popups for WPF applications
 
 ## Quick Start
 
-1. Download EasyDotNetNotification from nuget
+1. Download ModernToast from nuget.org
 
-2. Import EasyDotNetNotification in XAML
-
-```xaml
-xmlns:NotificationArea="clr-namespace:EasyDotNetNotification.Usercontrols;assembly=EasyDotNetNotification"
-```
-
-3. The code below adds the base control for creating alerts
+2. Import ModernToast in XAML
 
 ```xaml
-<NotificationArea:NotificationAlertAreaControl x:Name="NotificationArea" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+xmlns:ToastArea="clr-namespace:ModernToast.Usercontrols;assembly=ModernToast"
 ```
-![image](https://user-images.githubusercontent.com/41344707/166309371-323c7443-be95-4e4b-8096-eb01cbb6f65e.png)
 
-4. Finally, just call the below function as per the desired overload
+3. Create and position your popups area, where the toasts will be rendered and stacked on view
 
-```c#
-private void Button_Click(object sender, RoutedEventArgs e)
-{
-    NotificationArea.CreateNotificationAlert(4, "Test notification text");
-}
+```xaml
+<Toast:ToastAreaControl x:Name="ToastArea" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="500"/>
 ```
-![image](https://user-images.githubusercontent.com/41344707/166309981-c84dec7e-110f-4076-934b-6ff9bd354958.png)
-![image](https://user-images.githubusercontent.com/41344707/166310248-03555245-824f-446c-b224-a53f8349d7a2.png)
+
+4. Finally, just call the desired `CreateToast` method overload from `ToastArea`. You can choose many options like colors, sizes and duration
 
 ```c#
-NotificationArea.CreateNotificationAlert(7, "Notification title", "Notification text", NotificationImage.info, true);
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ToastArea.CreateToast(5, "Title", "Notification text", 300);
+        }
 ```
-![image](https://user-images.githubusercontent.com/41344707/166310595-c3a0b749-4577-4fe4-92bf-d5f15cd1e887.png)
+
+```c#
+
+
 
 Overloads include visibility time, title, text, image and manually close button visibility
