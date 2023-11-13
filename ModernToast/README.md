@@ -26,8 +26,6 @@ xmlns:ToastArea="clr-namespace:ModernToast.Usercontrols;assembly=ModernToast"
         }
 ```
 
-```c#
+This shoul be your result:
 
-
-
-Overloads include visibility time, title, text, image and manually close button visibility
+        
