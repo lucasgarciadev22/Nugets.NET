@@ -8,7 +8,7 @@ Modern custom toast popups for WPF applications
 2. Import ModernToast in XAML
 
 ```xaml
-xmlns:ToastArea="clr-namespace:ModernToast.Usercontrols;assembly=ModernToast"
+xmlns:Toast="clr-namespace:ModernToast.Usercontrols;assembly=ModernToast"
 ```
 
 3. Create and position your popups area, where the toasts will be rendered and stacked on view
