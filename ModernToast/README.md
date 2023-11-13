@@ -28,4 +28,5 @@ xmlns:ToastArea="clr-namespace:ModernToast.Usercontrols;assembly=ModernToast"
 
 This shoul be your result:
 
+![toast preview](preview_toasts.png)
         
