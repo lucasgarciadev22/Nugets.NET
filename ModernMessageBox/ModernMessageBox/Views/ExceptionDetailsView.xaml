@@ -3,8 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
-      mc:Ignorable="d" 
+        mc:Ignorable="d" 
        x:ClassModifier="internal"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None"
         Height="500" Width="800"
@@ -14,22 +13,22 @@
         <ResourceDictionary Source="../Styles/Styles.xaml"/>
     </Window.Resources>
 
-    <Grid Background="{StaticResource BackgroundColor}">
-        <DockPanel Margin="10 7 10 10">
-            <TextBlock DockPanel.Dock="Top" Text="Exception Details:" FontSize="20" FontWeight="Bold"
+    <Border CornerRadius="8" Background="Transparent">
+        <Grid Background="{StaticResource BackgroundColor}">
+            <DockPanel Margin="10 7 10 10">
+                <TextBlock Margin="8 0" DockPanel.Dock="Top" Text="Exception Details:" FontSize="20" FontWeight="Bold"
                        Foreground="{StaticResource FontColor}"/>
-            <Border BorderBrush="{StaticResource SecondaryColor}" BorderThickness="1" Margin="8" CornerRadius="8">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <TextBlock x:Name="DetailsText" TextWrapping="Wrap" Foreground="{StaticResource FontColor}" 
+                <Border BorderBrush="{StaticResource SecondaryColor}" BorderThickness="1" Margin="8" CornerRadius="8">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <TextBlock x:Name="DetailsText" TextWrapping="Wrap" Foreground="{StaticResource FontColor}" 
                                FontSize="16" Margin="10"
                                Text="Teste"/>
-                </ScrollViewer>
-            </Border>
-        </DockPanel>
-        <Button Style="{StaticResource GenericSmallIconButtonDanger}" Click="OnCloseButtonClick" IsCancel="True"
+                    </ScrollViewer>
+                </Border>
+            </DockPanel>
+            <Button Style="{StaticResource GenericSmallIconButtonDanger}" Click="OnCloseButtonClick" IsCancel="True" Content=" X "
                 VerticalAlignment="Top" HorizontalAlignment="Right">
-
-            <iconPacks:Material Kind="Close"/>
-        </Button>
-    </Grid>
+            </Button>
+        </Grid>
+    </Border>
 </Window>
